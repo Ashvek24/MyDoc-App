@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile - MyDoc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyDoc</h1>
+        <nav>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/search">Search Doctors</a></li>
+                <li><a href="/book-appointment">Book Appointment</a></li>
+                <li><a href="/my-profile">My Profile</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+  
+
+    <main>
+        <h2>About</h2>
+        <p>Specialty: Cardiology</p>
+        <p>Experience: 10 years</p>
+        <p>Location: New York</p>
+        
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form" method="POST" action="/book-appointment">
+            <input type="hidden" name="doctorId" value="johndoe">
+            <label for="date">Select Date:</label>
+            <input type="date" name="date" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyDoc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
